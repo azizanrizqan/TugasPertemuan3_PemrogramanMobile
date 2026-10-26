@@ -1,25 +1,18 @@
 import 'package:flutter/material.dart';
-import 'home_page.dart';
+import 'halaman_home.dart';
 
 void main() {
-  runApp(const PerpustakaanApp());
+  runApp(const MyApp());
 }
 
-class PerpustakaanApp extends StatelessWidget {
-  const PerpustakaanApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Perpustakaan Kampus',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.blue,
-        ),
-        useMaterial3: true,
-      ),
-      home: const HomePage(),
+      title: "Aplikasi Flutter Pertama",
+      home: HalamanHome(),
     );
   }
 }
